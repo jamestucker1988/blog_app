@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Started GET "/articles," for 127.0.0.1 at 2021-01-22 09:41:45 +0100
   [1m[35m (20.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   
@@ -14,6 +15,29 @@ Processing by ArticlesController#index as HTML
 Version: webpack 4.46.0
 Time: 45483ms
 Built at: 01/22/2021 9:43:19 AM
+=======
+Started GET "/" for ::1 at 2021-01-21 19:21:06 +0530
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant HomeController):
+  
+Started GET "/home/index" for ::1 at 2021-01-21 19:23:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+Started GET "/" for ::1 at 2021-01-21 19:42:34 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 220)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/kumar/Desktop/microverse-project/blog_app/rail-blog/public/packs
+[Webpacker] Hash: 415a948d492e21802f43
+Version: webpack 4.46.0
+Time: 4016ms
+Built at: 21/01/2021 19:42:40
+>>>>>>> 8ab45917db023d71b9b01e02dfc403ed30bc7873
                                      Asset       Size       Chunks                         Chunk Names
     js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
 js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
@@ -25,7 +49,61 @@ Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 3 hidden modules
 
+<<<<<<< HEAD
   Rendered layout layouts/application.html.erb (Duration: 75941.5ms | Allocations: 17032)
 Completed 200 OK in 76098ms (Views: 75956.6ms | ActiveRecord: 0.0ms | Allocations: 19339)
+=======
+  Rendered layout layouts/application.html.erb (Duration: 6749.5ms | Allocations: 17401)
+Completed 200 OK in 6776ms (Views: 6756.4ms | ActiveRecord: 0.0ms | Allocations: 20330)
+
+
+Started GET "/" for ::1 at 2021-01-21 19:45:28 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 3009)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 3393)
+
+
+Started GET "/home/index" for ::1 at 2021-01-21 19:45:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+Started GET "/home/index" for ::1 at 2021-01-21 19:46:49 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 3118)
+Completed 200 OK in 26ms (Views: 24.3ms | Allocations: 3682)
+
+
+Started GET "/" for ::1 at 2021-01-21 19:46:59 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kumar/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kumar/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 18.3ms | Allocations: 223)
+Completed 200 OK in 31ms (Views: 28.8ms | Allocations: 944)
+
+
+Started GET "/" for ::1 at 2021-01-22 13:34:52 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kumar/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kumar/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 31.8ms | Allocations: 337)
+Completed 200 OK in 102ms (Views: 37.1ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/home/index" for ::1 at 2021-01-22 13:35:05 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 291.1ms | Allocations: 5090)
+Completed 200 OK in 305ms (Views: 298.9ms | ActiveRecord: 0.0ms | Allocations: 6233)
+>>>>>>> 8ab45917db023d71b9b01e02dfc403ed30bc7873
 
 
