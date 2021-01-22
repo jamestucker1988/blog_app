@@ -1,0 +1,31 @@
+Started GET "/articles," for 127.0.0.1 at 2021-01-22 09:41:45 +0100
+  [1m[35m (20.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/articles,"):
+  
+Started GET "/articles" for 127.0.0.1 at 2021-01-22 09:42:06 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 105)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/oxford/Desktop/var/blog_app/rail-blog/public/packs
+[Webpacker] Hash: 415a948d492e21802f43
+Version: webpack 4.46.0
+Time: 45483ms
+Built at: 01/22/2021 9:43:19 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 75941.5ms | Allocations: 17032)
+Completed 200 OK in 76098ms (Views: 75956.6ms | ActiveRecord: 0.0ms | Allocations: 19339)
+
+
