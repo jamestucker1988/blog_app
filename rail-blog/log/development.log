@@ -138,3 +138,78 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 363ms (Views: 338.0ms | ActiveRecord: 0.0ms | Allocations: 18495)
 
 
+Started GET "/articles" for ::1 at 2021-01-22 14:58:48 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 5610)
+Completed 200 OK in 95ms (Views: 68.0ms | ActiveRecord: 0.0ms | Allocations: 8509)
+
+
+Started GET "/show" for ::1 at 2021-01-22 14:59:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+  [1m[35m (9.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (5.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Hello Rails"], ["body", "I am on Rails!"], ["created_at", "2021-01-22 09:33:27.248287"], ["updated_at", "2021-01-22 09:33:27.248287"]]
+  [1m[36mTRANSACTION (92.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/articles" for ::1 at 2021-01-22 15:07:07 +0530
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 5610)
+Completed 200 OK in 138ms (Views: 73.3ms | ActiveRecord: 0.0ms | Allocations: 8472)
+
+
+Started GET "/show" for ::1 at 2021-01-22 15:07:16 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+Started GET "/show" for ::1 at 2021-01-22 15:08:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+Started GET "/show" for ::1 at 2021-01-22 15:10:01 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+Started GET "/show" for ::1 at 2021-01-22 15:11:21 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+Started GET "/show" for ::1 at 2021-01-22 15:13:44 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+Started GET "/Articles/show" for ::1 at 2021-01-22 15:14:18 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Articles/show"):
+  
+Started GET "/Articles/1" for ::1 at 2021-01-22 15:14:28 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Articles/1"):
+  
+Started GET "/articles/1" for ::1 at 2021-01-22 15:14:39 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 3448)
+Completed 200 OK in 100ms (Views: 46.6ms | ActiveRecord: 5.8ms | Allocations: 9635)
+
+
