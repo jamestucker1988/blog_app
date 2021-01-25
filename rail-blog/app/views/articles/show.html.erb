@@ -1,13 +1,16 @@
-<h1><%= @article.title %></h1>
-
-<p><%= @article.body %></p>
-
-<ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article),
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><%= @article.title %></h1>
+    <hr class="my-4">
+    <p class="lead"><%= @article.body %></p>
+    <hr class="my-4">
+  </div>
+</div>
+  <%= link_to "Edit", edit_article_path(@article), class:"btn btn-primary"%>
+  <%= link_to "Destroy", article_path(@article),
                   method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
-</ul>
+                  data: { confirm: "Are you sure?" }, class:"btn btn-danger"%>
+<br/><br/>
 
 <h2>Comments</h2>
 <% @article.comments.each do |comment| %>
@@ -21,19 +24,19 @@
     <%= comment.body %>
   </p>
 <% end %>
+<br/><br/>
 
 <h2>Add a comment:</h2>
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
+  <p class="mb-3">
+    <%= form.label :commenter, class:"form-label" %><br>
+    <%= form.text_field :commenter, class:"form-control" %>
+  </p>
+  <p class="mb-3">
+    <%= form.label :body, class:"form-label" %><br>
+    <%= form.text_area :body, class:"form-control" %>
   </p>
   <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-dark"%>
   </p>
 <% end %>
-<%= link_to "Home", root_path %>
